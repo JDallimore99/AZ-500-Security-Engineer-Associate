@@ -15,3 +15,15 @@ Characteristics of Azure AD that make it different.
 - **Authorization Service**. Uses OAuth.
 - **Federation Services**. Azure AD includes federation services, and many third-party services (such as Facebook).
 - **Flat structure.** Azure AD users and groups are created in a flat structure, and there are no Organizational Units (OUs) or Group Policy Objects (GPOs).
+
+The following table summarizes the differences:
+
+|Azure Active Directory| Active Directory Domain Services|
+|:---|:---|
+|Cloud|On-Premises|
+|Designed for HTTP & HTTPS|Query via LDAP|
+|Queried via REST API's|Used Kerberos for Authentication|
+|Uses SAML, WS-Federation, or OpenID for authentication|No Federated Services|
+|Uses OAuth for authorization|Organizational Units (OU's)|
+|Includes federation services|Group Policy (GPO's)|
+|Flat Structure||
