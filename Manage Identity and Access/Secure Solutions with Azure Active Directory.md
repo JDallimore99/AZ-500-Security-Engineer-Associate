@@ -109,3 +109,32 @@ You can delete an existing user using the Azure Active Directory portal.
 The user is deleted and no longer appears on the Users - All users page. The user can be seen on the Deleted users page for the next 30 days and can be restored during that time.
 
 When a user is deleted, any licenses consumed by the user are made available for other users.
+
+# Configure Azure AD administrative units
+An administrative unit is an Azure AD resource that can be a container for other Azure AD resources. An administrative unit can contain only users and groups. Administrative units restrict permissions in a role to any portion of your organization that you define.
+![image](https://user-images.githubusercontent.com/118181672/224758796-02975c71-320e-495a-835f-da4a954d2425.png)
+
+## Available roles
+|Role|Description|
+|:---|:---|
+|Authentication Administrator|Has access to view, set, and reset authentication method information for any non-admin user in the assigned administrative unit only.|
+|Groups Administrator|Can manage all aspects of groups and groups settings, such as naming and expiration policies, in the assigned administrative unit only.|
+|Helpdesk Administrator|Can reset passwords for non-administrators and Helpdesk administrators in the assigned administrative unit only.|
+|License Administrator|Can assign, remove, and update license assignments within the administrative unit only.|
+|Password Administrator|Can reset passwords for non-administrators and Password Administrators within the assigned administrative unit only.|
+|User Administrator|Can manage all aspects of users and groups, including resetting passwords for limited admins within the assigned administrative unit only.|
+
+# Implemen passwordless authentication??
+Sign-in without ever using a password. With passwordless, the password is replaced with something you have plus something you are or something you know. For example, Windows Hello for Business can use a biometric gesture like a face or fingerprint or a device-specific personal identification number (PIN) that isn't transmitted over a network.
+ 
+## Passwordless authentication methods
+- **Windows Hello for Busines**s - biometric and PIN credentials are directly tied to the user's PC, which prevents access from anyone other than the owner.
+- **Fast Identity Online (FIDO) 2 Security Keys** - generally stored on a Universal Serial Bus (USB) stick, FIDO2 security keys are an unphishable standards-based passwordless authentication method that can come in any form factor.
+- **Microsoft Authenticator App** - Authenticator App turns any iOS or Android phone into a strong, passwordless credential. Users can sign in to any platform or browser by getting a notification to their phone, matching a number displayed on the screen to the one on their phone, and then using their biometric (touch or face) or PIN to confirm.
+- **FIDO2 Smartcards (preview)** - new method to use FIDO2 keys for passwordless login via a smartcard.
+-** Temporary Access Pass (preview)** - time-limited passcode allows you to set up security keys and the Microsoft Authenticator without ever needing to use, much less know, your password!
+ 
+## Benefits of passwordless authentication
+- **Increased security** - Reduce the risk of phishing and password spray attacks by removing passwords as an attack surface.
+- **Better user experience** - Give users a convenient way to access data from anywhere. Provide easy access to applications and services such as Outlook, OneDrive, or Office while mobile.
+- **Robust insights** - Gain insights into users passwordless activity with robust logging and auditing.
