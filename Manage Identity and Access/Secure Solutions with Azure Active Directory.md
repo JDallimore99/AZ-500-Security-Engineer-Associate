@@ -65,3 +65,5 @@ The following features of Azure AD DS simplify deployment and management operati
 - **Use your corporate credentials/passwords**: Passwords for users in Azure AD DS are the same as in your Azure AD tenant. Users can use their corporate credentials to domain-join machines, sign in interactively or over remote desktop, and authenticate against the Azure AD DS managed domain.
 - **NTLM and Kerberos authentication**: With support for NTLM and Kerberos authentication, you can deploy applications that rely on Windows-integrated authentication.
 - **High availability**: Azure AD DS includes multiple domain controllers, which provide high availability for your managed domain. This high availability guarantees service uptime and resilience to failures.
+
+> Important: Azure AD DS integrates with Azure AD, which itself can synchronize with an on-premises AD DS environment. This ability extends central identity use cases to traditional web applications that run in Azure as part of a lift-and-shift strategy. 
